@@ -31,7 +31,7 @@ ui <- tagList(
   navbarPage(theme = shinytheme("united"),
     "Situation board",tabPanel("Daejeon",
                                sidebarPanel(
-                                 selectInput("column", label = h3("property:"),
+                                 selectInput("column", label = h3("Index:"),
                                              choices = list("pm10" = "mean_pm10_",
                                                             "NH3" = "mean_nh3",
                                                             "CO" = "mean_co",
@@ -41,9 +41,9 @@ ui <- tagList(
                                  selectInput("Gu", label = h3("Gu:"),
                                              choices = list("seo-gu"="1","jung-gu"="2","dong-gu"="3", "yuseong-gu"="4","daedeog-gu"="5"),
                                              selected = "1"),
-                                 radioButtons("radio1", label = h3("slot:"),
+                                 radioButtons("radio1", label = h3("Slot:"),
                                               choices = list("09~12" = 1,"12~15" = 2, "15~18" = 3, "total" = 4),
-                                              selected = 1)
+                                              selected = 4)
                                  , width=2
                                ),
                                mainPanel(
